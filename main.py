@@ -14,9 +14,9 @@ def enviar():
     n_telefone = entry.get()
 
     if not check1.get():
-        # Mandar usando o horário fornecido
-        hora, minuto = entry1.get().split(':')
-        hora, minuto = int(hora), int(minuto)
+        # Mandar usando o horário fornecido (xx:xx)
+        hora, minuto = entry1.get().split(':')      # Retorna uma lista
+        hora, minuto = int(hora), int(minuto)       # Desempacota a lista
 
         # Mandando a mensagem programada
         pywhatkit.sendwhatmsg(n_telefone, msg, hora, minuto, tab_close=True)
