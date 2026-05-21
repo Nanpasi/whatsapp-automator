@@ -6,29 +6,49 @@ import pywhatkit
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# TODO implementar uma checagem de dados usando uma função decoradora
+# TODO implementar checagem de horários usando uma função decoradora
+
 
 # /////////////////////////// FUNÇÕES //////////////////////////////////////////
 
-def enviar():
-    msg = text.get('1.0', 'end-1c')
-    n_telefone = entry.get()
+def get_dados():
+    mensagem = text.get('1.0', 'end-1c')
+    numero = entry.get()
+    check = check1.get()
 
-    if not check1.get():
-        # Mandar usando o horário fornecido (xx:xx)
-        hora, minuto = entry1.get().split(':')      # Retorna uma lista
-        hora, minuto = int(hora), int(minuto)       # Desempacota a lista
+    return mensagem, numero, check
 
-        # Mandando a mensagem programada
-        pywhatkit.sendwhatmsg(n_telefone, msg, hora, minuto, tab_close=True)
-        
+def get_horario():
+    # implementar checagem de horário usando uma função decoradora
+    # Pegando a string do campo "entry1" e transformando em duas variáveis int separadas
+    h, m = entry1.get().split(':')       # Retorna uma lista
+    h, m = int(h), int(m)                # Desempacota a lista
+
+    return h, m
+
+def send_msg(c, num, msg):
+    # Se a checkbox não estiver preenchida
+    if not c:
+        # Pegar horário fornecido (xx:xx)
+        hora, minuto = get_horario()
+
+        # Mensagem programada
+        pywhatkit.sendwhatmsg(num, msg, hora, minuto, tab_close=True)
+
         return False
-
-    # Mandando a mensagem na hora caso a caixa não esteja selecionada
-    pywhatkit.sendwhatmsg_instantly(n_telefone, msg, tab_close=True)
     
+    # Mensagem instantânea
+    pywhatkit.sendwhatmsg_instantly(num, msg, tab_close=True)
+
     return True
 
-# Ideia: Lista de contatos
+def submit():
+    # Pegando os dados dos campos de input
+    msg, n_telefone, mandar_na_hora = get_dados()
+
+    # Vendo se a mensagem é programada ou instantânea
+    send_msg(mandar_na_hora, n_telefone, msg)
 
 
 
@@ -105,7 +125,7 @@ c1.place(x=15, y=215)
 style.configure("button.TButton", background="#4dd256", foreground="#000", borderwidth=1)
 style.map("button.TButton", background=[("active", "#92e49e")], foreground=[("active", "#000")])
 
-button = ttk.Button(master=main, text="ENVIAR", style="button.TButton", command=enviar)
+button = ttk.Button(master=main, text="ENVIAR", style="button.TButton", command=submit)
 button.place(x=688, y=302, width=80, height=40)
 
 
