@@ -14,11 +14,13 @@ Programa simples de Python que manda mensagem automaticamente para qualquer núm
 1. Construir o protótipo (_**FEITO**_)
 
 2. Refatoração de código
+    * Feito apenas na primeira versão, a interface nova ainda precisa ser programada
 
 3. Error handling
 
-4. GUI nova (_**opcional**_)
+4. GUI nova (_**opcional**_) (_**FEITO**_)
     * Fazer interface nova com _Tkinter Designer (Figma)_
+    * Feita, mas ainda não está programada
 
 5. Funcionalidades novas (_**opcional**_)
     * Lista de contatos
