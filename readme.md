@@ -7,6 +7,8 @@ Programa simples de Python que manda mensagem automaticamente para qualquer núm
 * tkinter
 * pyuibuilder (website)
     * Usado para construir o esqueleto da interface
+* Tkinter-Designer
+    * Usado para implementar a nova interface do programa feita no Figma
 
 ## ROADMAP
 1. Construir o protótipo (_**FEITO**_)
