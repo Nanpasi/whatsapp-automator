@@ -25,3 +25,5 @@ Programa simples de Python que manda mensagem automaticamente para qualquer núm
 5. Funcionalidades novas (_**opcional**_)
     * Lista de contatos
     * Opções de formatação de texto
+
+6. Criar executável do programa
