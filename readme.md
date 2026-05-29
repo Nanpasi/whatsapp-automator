@@ -17,13 +17,14 @@ Programa simples de Python que manda mensagem automaticamente para qualquer núm
     * Feito apenas na primeira versão, a interface nova ainda precisa ser programada
 
 3. Error handling
+   * Não é recomendado usar o programa do jeito que está agora, vai crashar porque não tratei os erros. Vou fazer isso em outro momento.
 
-4. GUI nova (_**opcional**_) (_**FEITO**_)
+5. GUI nova (_**opcional**_) (_**FEITO**_)
     * Fazer interface nova com _Tkinter Designer (Figma)_
     * Feita, mas ainda não está programada
 
-5. Funcionalidades novas (_**opcional**_)
+6. Funcionalidades novas (_**opcional**_)
     * Lista de contatos
     * Opções de formatação de texto
 
-6. Criar executável do programa
+7. Criar executável do programa
