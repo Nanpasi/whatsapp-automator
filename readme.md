@@ -18,6 +18,7 @@ Programa simples de Python que manda mensagem automaticamente para qualquer núm
 
 3. Error handling
    * Não é recomendado usar o programa do jeito que está agora, vai crashar porque não tratei os erros. Vou fazer isso em outro momento.
+   * Implementar logging
 
 5. GUI nova (_**opcional**_) (_**FEITO**_)
     * Fazer interface nova com _Tkinter Designer (Figma)_
