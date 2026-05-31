@@ -1,6 +1,10 @@
 # WhatsApp Automator
 Programa simples de Python que manda mensagem automaticamente para qualquer número com horários programáveis.
 
+<p align='center'>
+<img width="611" height="720" alt="print" src="https://github.com/user-attachments/assets/48702ad0-af6b-4b3a-9b50-519180aaa9f7"/>
+</p>
+
 ## Ferramentas & bibliotecas utilizadas:
 * Python
 * pywhatkit
