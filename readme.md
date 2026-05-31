@@ -26,10 +26,10 @@ Programa simples de Python que manda mensagem automaticamente para qualquer núm
 
 5. GUI nova (_**opcional**_) (_**FEITO**_)
     * Fazer interface nova com _Tkinter Designer (Figma)_
-    * Feita, mas ainda não está programada
 
 6. Funcionalidades novas (_**opcional**_)
     * Lista de contatos
     * Opções de formatação de texto
+    * Colocar placeholders nas caixas de texto
 
 7. Criar executável do programa
